@@ -1,0 +1,4 @@
+MONGO_URI=mongodb+srv://venkataranjit:ranjit@cluster0.dq9u4.mongodb.net/TaskNest?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=ngoiajofalfnanfjmalfkanj516f
+CLIENT_URL=http://localhost:3000
+PORT=8000
