@@ -20,7 +20,7 @@ const sendEmail = async (
 ) => {
   const transporter = nodeMailer.createTransport({
     service: "Outlook365",
-    host: "smtp.office365.com",
+    host: "smtp-relay.sendinblue.com",
     port: 587,
     secure: false,
     auth: {

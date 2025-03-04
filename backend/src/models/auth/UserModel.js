@@ -25,7 +25,7 @@ const UserSchema = new mongoose.Schema(
 
     photo: {
       type: String,
-      default: "https://avatars.githubusercontent.com/u/19819005?v=4",
+      default: "https://tasknest-ranjit.vercel.app/logo.png",
     },
 
     bio: {
