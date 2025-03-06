@@ -1,7 +1,7 @@
 # TaskNext
 
 TaskNext is a task management web application built with Next.js, designed to help users organize and track their tasks efficiently. It features user authentication, task prioritization, real-time analytics, and a visually appealing UI.
-
+<!-- Server Details : Github, Vercel, Render -->
 ## 🚀 Features
 
 - **User Authentication**: Register and login securely.
