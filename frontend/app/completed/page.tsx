@@ -40,7 +40,7 @@ export default function Home() {
           onClick={openModalForAdd}
           variants={item}
         >
-          Add New Task
+         <span className="text-[240px] font-thin relative top-5">+</span>
         </motion.button>
         {filtered.map((task: Task, i: number) => (
           <TaskItem key={i} task={task} />
