@@ -1,12 +1,13 @@
 "use client";
 import { useTasks } from "@/context/taskContext";
 import { useUserContext } from "@/context/userContext";
+import { filteredTasks, overdueTasks } from "@/utils/utilities";
 import React from "react";
 
 function Profile() {
   const { user } = useUserContext();
   const { tasks, activeTasks, completedTasks, openProfileModal } = useTasks();
-  const overdueTasks = overdueTasks(tasks);
+    const overdue = overdueTasks(tasks);
   return (
     <div className="m-6">
       <div
@@ -47,7 +48,7 @@ function Profile() {
             <p className="pl-4 relative flex gap-2">
               <span className="absolute h-[70%] w-[0.2rem] left-[1px] top-1/2 translate-y-[-50%] bg-orange-400 rounded-[5px]"></span>
               <span className="font-medium text-4xl text-[#333]">
-                {overdueTasks.length}
+                {overdue.length}
               </span>
             </p>
           </div>
