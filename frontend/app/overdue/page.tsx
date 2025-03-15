@@ -17,7 +17,7 @@ export default function Home() {
   const overdue = overdueTasks(tasks);
 
   const filtered = filteredTasks(overdue, priority);
-
+  console.log(filtered.length)
   useEffect(() => {
     setPriority("all");
   }, []);
